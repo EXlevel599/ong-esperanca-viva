@@ -40,4 +40,4 @@ Publicação
 
 O projeto está hospedado no GitHub Pages.
 
-docs: atualizar README do projeto
+
