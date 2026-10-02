@@ -39,5 +39,3 @@ O projeto utiliza elementos semânticos HTML5, associação entre labels e campo
 Publicação
 
 O projeto está hospedado no GitHub Pages.
-
-
