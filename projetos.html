@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ONG Esperança Viva</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <button
+            type="button"
+            id="menu-mobile"
+            class="menu-mobile"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="navegacao"
+        >
+            ☰
+        </button>
+
+        <nav id="navegacao" aria-label="Navegação principal">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="menu-dropdown">
+
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        aria-haspopup="true"
+                    >
+                        Conteúdo ▾
+                    </button>
+
+                    <ul class="dropdown-conteudo">
+
+                        <li>
+                            <a href="index.html#sobre">
+                                Sobre a ONG
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#contato">
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="projetos.html">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Os Nossos Projetos e Formas de Apoio</h1>
+
+        <section id="projetos">
+
+            <h2>Frentes de Atuação</h2>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3>Educação para o Futuro</h3>
+
+                    <div class="badges">
+                        <span class="badge badge--ativo">
+                            Ativo
+                        </span>
+                    </div>
+
+                    <p>
+                        Oferecemos aulas de reforço escolar e workshops
+                        de tecnologia para jovens.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Programa de Sustentabilidade</h3>
+
+                    <div class="badges">
+                        <span class="badge badge--andamento">
+                            Em andamento
+                        </span>
+                    </div>
+
+                    <p>
+                        Desenvolvemos ações de conscientização ambiental
+                        e incentivo ao uso consciente dos recursos naturais.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Campanha Comunitária</h3>
+
+                    <div class="badges">
+                        <span class="badge badge--concluido">
+                            Concluído
+                        </span>
+                    </div>
+
+                    <p>
+                        A campanha promoveu ações de apoio e arrecadação
+                        para famílias da comunidade.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="voluntariado">
+
+            <h2>Programa de Voluntariado</h2>
+
+            <p>
+                Junte-se à nossa equipe e faça a diferença
+                na vida de várias famílias.
+            </p>
+
+            <ul>
+                <li>Preencha sua ficha no menu de cadastro.</li>
+                <li>Aguarde o contato da nossa equipe de coordenação.</li>
+            </ul>
+
+        </section>
+
+        <section id="doacoes">
+
+            <h2>Campanha de Doações</h2>
+
+            <p>
+                Sua contribuição financeira apoia a manutenção
+                de todas as nossas atividades.
+            </p>
+
+            <a
+                href="cadastro.html"
+                class="botao"
+                data-acao="doacao"
+            >
+                Apoiar Agora
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 ONG Esperança Viva.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <div
+        id="modal-feedback"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-titulo"
+        aria-describedby="modal-mensagem"
+        aria-hidden="true"
+    >
+
+        <div class="modal__conteudo">
+
+            <div class="modal__cabecalho">
+
+                <div>
+
+                    <h2 id="modal-titulo" class="modal__titulo">
+                        Feedback
+                    </h2>
+
+                    <p id="modal-mensagem">
+                        Mensagem de feedback.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="modal-fechar"
+                    class="modal__fechar"
+                    aria-label="Fechar mensagem"
+                >
+                    &times;
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

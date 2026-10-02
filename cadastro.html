@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Esperança Viva - Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+    <img
+        src="imagens/logo.png"
+        alt="Logotipo da ONG Esperança Viva"
+        width="180"
+        height="180"
+    >
+
+    <button
+        type="button"
+        id="menu-mobile"
+        class="menu-mobile"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="navegacao"
+    >
+        ☰
+    </button>
+
+    <nav id="navegacao" aria-label="Navegação principal">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+
+            <li class="menu-dropdown">
+
+                <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                >
+                    Conteúdo ▾
+                </button>
+
+                <ul class="dropdown-conteudo">
+
+                    <li>
+                        <a href="index.html#sobre">
+                            Sobre a ONG
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contato">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="projetos.html">Projetos</a>
+            </li>
+
+            <li>
+                <a href="cadastro.html">Cadastro</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+    <main>
+
+        <h1>Cadastro de Voluntário</h1>
+
+        <section>
+            <h2>Preencha seus dados</h2>
+
+            <p>
+                Preencha o formulário abaixo para demonstrar seu interesse
+                em participar das atividades da ONG Esperança Viva.
+            </p>
+
+            <form>
+
+                <p>
+                    <label for="nome">Nome completo:</label><br>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="cpf">CPF:</label><br>
+                    <input
+                        type="text"
+                        id="cpf"
+                        name="cpf"
+                        pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}-?[0-9]{2}"
+                        placeholder="000.000.000-00"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label><br>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        pattern="\(?[0-9]{2}\)?\s?[0-9]{4,5}-?[0-9]{4}"
+                        placeholder="(11) 99999-9999"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="cep">CEP:</label><br>
+                    <input
+                        type="text"
+                        id="cep"
+                        name="cep"
+                        pattern="[0-9]{5}-?[0-9]{3}"
+                        placeholder="00000-000"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="data">Data de nascimento:</label><br>
+                    <input
+                        type="date"
+                        id="data"
+                        name="data"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="mensagem">
+                        Por que deseja ser voluntário?
+                    </label><br>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        cols="40"
+                        required
+                    ></textarea>
+                </p>
+
+                <p>
+                    <button type="submit" class="botao">
+                        Enviar cadastro
+                    </button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 ONG Esperança Viva.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <div
+        id="modal-feedback"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-titulo"
+        aria-describedby="modal-mensagem"
+        aria-hidden="true"
+    >
+
+        <div class="modal__conteudo">
+
+            <div class="modal__cabecalho">
+
+                <div>
+
+                    <h2 id="modal-titulo" class="modal__titulo">
+                        Feedback
+                    </h2>
+
+                    <p id="modal-mensagem">
+                        Mensagem de feedback.
+                    </p>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="modal-fechar"
+                    class="modal__fechar"
+                    aria-label="Fechar mensagem"
+                >
+                    &times;
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
